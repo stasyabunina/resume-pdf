@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+
+    a {
+        color: #9f9f9f;
+    }
+
+    .app {
+        padding: 60px;
+    }
+
+    .app__section {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+        margin-bottom: 70px;
+    }
+
+    .app__left {
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .app__right {
+        grid-column: 6 / span 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .app__left-text {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .app__subsection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app__subsection:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .personal__name {
+        margin-bottom: 7px;
+        font-weight: 700;
+    }
+
+    .personal__location {
+        color: #9f9f9f;
+    }
+
+    .personal__prof_secondary {
+        margin-bottom: 3px;
+    }
+
+    .personal__right {
+        color: #9f9f9f;
+    }
+
+    .personal__website-link {
+        margin-bottom: 7px;
+    }
+
+    .courses__date {
+        color: #9f9f9f;
+    }
+
+    .courses__name {
+        display: flex;
+    }
+
+    .courses__link {
+        color: black;
+    }
+
+    .education__details {
+        color: #9f9f9f;
+    }
+
+    .skills__subsection {
+        display: block;
+        column-count: 3;
+    }
+
+    .skills__text {
+        display: block;
+    }
+
+    .portfolio__name {
+        font-weight: 700;
+    }
+</style>
+
+<body>
+    <div class="app">
+        <div class="app__section app__personal personal">
+            <div class="app__left">
+                <span class="personal__name">Анастасия Бунина</span>
+                <span class="personal__prof">Frontend разработчик</span>
+                <span class="personal__prof personal__prof_secondary">Веб-верстальщик</span>
+                <span class="personal__location">Воркута</span>
+            </div>
+            <div class="app__right personal__right">
+                <a class="personal__website-link" href="https://astassssia.ucoz.org/"
+                    target="_blank">astassssia.ucoz.org</a>
+                <span>tryes9856@gmail.com</span>
+                <span>tryes12@yandex.ru</span>
+                <a href="https://t.me/astassssia" target="_blank">t.me/astassssia</a>
+                <a href="https://github.com/stasyabunina" target="_blank">github.com/stasyabunina</a>
+            </div>
+        </div>
+        <div class="app__section app__education education">
+            <div class="app__left">
+                <span class="app__left-text">Образование</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection">
+                    Основное общее образование
+                    <span class="education__details">МОУ Гимназия №1, 2018</span>
+                </div>
+                <div class="app__subsection">
+                    Среднее общее образование (серебряная медаль)
+                    <span class="education__details">МОУ Гимназия №1, 2020</span>
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__courses courses">
+            <div class="app__left">
+                <span class="app__left-text">Курсы</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection">
+                    <span class="courses__name">Веб-вёрстка (<a class="courses__link"
+                            href="https://cdn.skillbox.pro/certgen/certificates/7/3InSF3MA8KbyjJq2Om8epSza9y41fRkA.png?utm_source=expertsender&utm_medium=email&utm_content=kingreturn&utm_campaign=all_all_expertsender_email_calendar_course_all_all_skillbox&utm_term=autoresponder"
+                            target="_blank">сертификат</a>)</span>
+                    <span class="courses__date"><a href="https://skillbox.ru/" target="_blank">Skillbox</a>,
+                        2022-2023</span>
+                </div>
+                <div class="app__subsection">
+                    <span class="courses__name">Frontend-разработчик с нуля (<a class="courses__link"
+                            href="https://netology.ru/backend/api/user/programs/29501/pdf_certificate"
+                            target="_blank">сертификат</a>)</span>
+                    <span class="courses__date"><a href="https://netology.ru/" target="_blank">Netology</a>,
+                        2022-2024</span>
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__experience experience">
+            <div class="app__left">
+                <span class="app__left-text">Опыт работы</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection">
+                    Коммерческий опыт отсутствует
+                </div>
+                <div class="app__subsection">
+                    Имеется более 2 лет практического опыта, полученного в ходе обучения на курсах
+                </div>
+                <div class="app__subsection">
+                    Некоммерческий опыт – разработка собственного сайта-резюме
+                    <a href="https://astassssia.ucoz.org/" target="_blank">astassssia.ucoz.org</a>
+                    Стек: Gulp, Pug, SCSS/Sass, JS...
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__lang lang">
+            <div class="app__left">
+                <span class="app__left-text">Языки</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection">
+                    Английский – C1 Advanced (Продвинутый)
+                </div>
+                <div class="app__subsection">
+                    Русский – родной язык
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__skills skills">
+            <div class="app__left">
+                <span class="app__left-text">Знания и навыки</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection skills__subsection">
+                    <span class="skills__text">HTML5</span>
+                    <span class="skills__text">CSS3</span>
+                    <span class="skills__text">JS</span>
+                    <span class="skills__text">SCSS/Sass</span>
+                    <span class="skills__text">методология БЭМ</span>
+                    <span class="skills__text">Pug</span>
+                    <span class="skills__text">Bootstrap</span>
+                    <span class="skills__text">Tailwind</span>
+                    <span class="skills__text">Node.js</span>
+                    <span class="skills__text">Gulp</span>
+                    <span class="skills__text">Vite.js</span>
+                    <span class="skills__text">Vue</span>
+                    <span class="skills__text">Vuex</span>
+                    <span class="skills__text">Vue Router</span>
+                    <span class="skills__text">Git/Guthub</span>
+                    <span class="skills__text">React</span>
+                    <span class="skills__text">React Router</span>
+                    <span class="skills__text">Redux</span>
+                    <span class="skills__text">Redux Toolkit</span>
+                    <span class="skills__text">Redux Observable</span>
+                    <span class="skills__text">Redux Saga</span>
+                    <span class="skills__text">jQuery</span>
+                    <span class="skills__text">вёрстка писем</span>
+                    <span class="skills__text">Figma/Adobe Photoshop</span>
+                    <span class="skills__text">AJAX</span>
+                    <span class="skills__text">Axios</span>
+                    <span class="skills__text">REST API</span>
+                    <span class="skills__text">Fetch API</span>
+                    <span class="skills__text">RxJS</span>
+                    <span class="skills__text">Typescript</span>
+                    <span class="skills__text">Websockets</span>
+                    <span class="skills__text">Webpack</span>
+                    <span class="skills__text">Prettier</span>
+                    <span class="skills__text">Babel</span>
+                    <span class="skills__text">PostCSS</span>
+                    <span class="skills__text">линтеры</span>
+                    <span class="skills__text">GSAP</span>
+                    <span class="skills__text">Framer Motion</span>
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__portfolio portfolio">
+            <div class="app__left">
+                <span class="app__left-text">Портфолио</span>
+            </div>
+            <div class="app__right">
+                <div class="app__subsection">
+                    <span class="portfolio__name">Система бронирования ж/д билетов</span>
+                    Стек: Vite.js, CSS3, Axios, React, React Router, Redux, Redux Observable...
+                    <div class="portfolio__links">
+                        <a href="https://github.com/stasyabunina/ticket-booking-diplom" target="_blank">Github</a>
+                        /
+                        <a href="https://stasyabunina.github.io/ticket-booking-diplom/" target="_blank">Github Pages</a>
+                    </div>
+                </div>
+                <div class="app__subsection">
+                    <span class="portfolio__name">SitDownPls – интернет-магазин мебели</span>
+                    Стек: Gulp 5, HTML5, SCSS/Sass, JS...
+                    <div class="portfolio__links">
+                        <a href="https://github.com/stasyabunina/sitDownPls" target="_blank">Github</a>
+                        /
+                        <a href="https://stasyabunina.github.io/sitDownPls/" target="_blank">Github Pages</a>
+                    </div>
+                </div>
+                <div class="app__subsection">
+                    <span class="portfolio__name">Chaos Organizer – чатбот-органайзер</span>
+                    Стек: Vite.js, HTML5, CSS3, Tailwind, DaisyUI, JS, Axios...
+                    <div class="portfolio__links">
+                        <a href="https://github.com/stasyabunina/chaos-organizer" target="_blank">Github</a>
+                        /
+                        <a href="https://stasyabunina.github.io/chaos-organizer/" target="_blank">Github Pages</a>
+                    </div>
+                </div>
+                <div class="app__subsection">
+                    <span class="portfolio__name">Радио Wwave</span>
+                    Стек: Gulp 5, Pug, SCSS/Sass, JS...
+                    <div class="portfolio__links">
+                        <a href="https://github.com/stasyabunina/radio_Wwave" target="_blank">Github</a>
+                        /
+                        <a href="https://stasyabunina.github.io/radio_Wwave/" target="_blank">Github Pages</a>
+                    </div>
+                </div>
+                <div class="app__subsection">
+                    <span class="portfolio__name">Менеджер задач наподобие Trello</span>
+                    Стек: Vite.js, Vue.js, SCSS/Sass...
+                    <div class="portfolio__links">
+                        <a href="https://github.com/stasyabunina/trello-vue" target="_blank">Github</a>
+                        /
+                        <a href="https://stasyabunina.github.io/trello-vue/" target="_blank">Github Pages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="app__section app__extra extra">
+            <div class="app__left">
+                <span class="app__left-text">Дополнтельные знания, навыки и хобби</span>
+            </div>
+            <div class="app__right">
+                Регулярное поглощение англоязычного медиа и контента, включая видео, статьи и другие форматы,
+                способствующее моему высокому уровню владения языком, культурному пониманию и развитию межкультурных
+                коммуникационных навыков.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
